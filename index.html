@@ -31,9 +31,9 @@
 
 <section id="it" lang="it">
 <h2>Informativa sulla privacy</h2>
-<p class="small">In vigore dal 11 novembre 2026 · App: TataZampa (Android) · Sviluppatore: Mirko Del Sette · Contatto: <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a></p>
+<p class="small">In vigore dal 14 novembre 2026 · App: TataZampa (Android) · Sviluppatore: Mirko Del Sette · Contatto: <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a></p>
 
-<p class="box">In breve: TataZampa non raccoglie, non invia e non vende nessun dato. Tutto resta sul tuo telefono. L'app non ha nemmeno il permesso di usare internet.</p>
+<p class="box">In breve: senza backup nel cloud, TataZampa non invia i tuoi dati: tutto resta sul tuo telefono. Se attivi il backup nel cloud (a pagamento, facoltativo), i tuoi dati vengono <b>cifrati sul tuo telefono prima di partire</b>: né noi né nessun altro possiamo leggerli.</p>
 
 <h3>1. Chi siamo</h3>
 <p>TataZampa è un'app gratuita di sveglie e promemoria per terapie, pappa e altre cure dei tuoi animali, sviluppata da Mirko Del Sette (persona privata).</p>
@@ -43,7 +43,7 @@
 
 <h3>3. Cosa NON fa l'app</h3>
 <ul>
-  <li>Non invia dati a noi o ad altri: l'app non ha il permesso Android di accesso a internet.</li>
+  <li>Senza backup nel cloud non invia i tuoi dati a noi o ad altri. Unica eccezione tecnica: il lettore di QR (Google ML Kit, dentro l'app) può mandare a Google statistiche tecniche anonime sul suo funzionamento, senza i tuoi dati.</li>
   <li>Niente pubblicità, niente statistiche, niente tracciamento, niente profilazione.</li>
   <li>Non usa la tua posizione, i contatti, il microfono o l'identificativo pubblicitario.</li>
   <li>Non vende e non cede dati a nessuno.</li>
@@ -54,7 +54,7 @@
   <li><b>Notifiche, sveglie esatte, schermo intero, avvio all'accensione, vibrazione, schermo acceso</b>: per far suonare la sveglia all'ora giusta, anche a telefono bloccato o dopo un riavvio.</li>
   <li><b>Mostra sopra le altre app</b>: solo per aprire da sola la schermata della sveglia che suona, anche mentre usi il telefono. Nessun dato viene letto dalle altre app.</li>
   <li><b>Servizio in primo piano per le sveglie</b>: per far continuare il suono della sveglia finché premi FATTO o Rimanda.</li>
-  <li><b>Stato della rete</b>: lo chiede la parte di Google che legge i QR (solo per sapere se c'è rete). L'app non ha il permesso di accesso a internet, quindi nessun dato può uscire dal telefono.</li>
+  <li><b>Stato della rete</b>: lo chiede la parte di Google che legge i QR (solo per sapere se c'è rete).</li>
   <li><b>Ignora ottimizzazione batteria</b> (lo concedi tu): perché il telefono non blocchi le sveglie delle terapie.</li>
   <li><b>Fotocamera</b>: solo quando tocchi "Inquadra QR" per leggere il QR di un altro telefono. Le immagini della fotocamera restano sul telefono e non vengono salvate. Per la foto dell'animale scegli tu galleria o fotocamera; la foto resta dentro l'app.</li>
 </ul>
@@ -66,7 +66,7 @@
 <p>Se sul tuo telefono è acceso il backup di Google, Android può salvare una copia dei dati dell'app nel <b>tuo</b> account Google, per ripristinarli su un telefono nuovo. Questo backup è gestito da Google secondo le sue regole; noi non lo vediamo e non possiamo accedervi. Puoi spegnerlo nelle impostazioni del telefono (Google → Backup).</p>
 
 <h3>7. Aggiornamenti</h3>
-<p>Quando c'è una versione nuova, l'app può chiedere all'app Google Play di mostrarti la finestra "Aggiorna". Lo scambio avviene tra il telefono e Google Play; TataZampa non invia dati.</p>
+<p>Quando c'è una versione nuova, l'app può chiedere all'app Google Play di mostrarti la finestra "Aggiorna". Lo scambio avviene tra il telefono e Google Play; TataZampa non invia dati. Solo le copie installate da file (non dal Play Store) chiedono a Google Firebase se c'è un avviso di aggiornamento: parte solo un codice tecnico dell'installazione, nessun tuo dato.</p>
 
 <h3>8. Cancellare i dati</h3>
 <p>Puoi eliminare un animale da Impostazioni → Profili. Disinstallando l'app, tutti i suoi dati vengono cancellati dal telefono. Il backup Android si cancella dal tuo account Google.</p>
@@ -79,13 +79,46 @@
 
 <h3>11. Contatti</h3>
 <p>Per domande: Mirko Del Sette – <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a></p>
+<p>Senza backup nel cloud, TataZampa non invia nessun dato: tutto resta sul tuo telefono. Se attivi il backup nel cloud (a pagamento, facoltativo), i tuoi dati vengono <b>cifrati sul tuo telefono prima di partire</b>: né noi né nessun altro possiamo leggerli.</p>
+<h3>12. Backup nel cloud (facoltativo)</h3>
+<ul>
+<li>Cosa salva: profili degli animali, sveglie, terapie, pappa, cose da fare, note, storico, foto del profilo e foto dell'album (entro il limite del tuo piano).</li>
+<li>Prima di partire, le foto vengono rimpicciolite e da loro togliamo il luogo (GPS) e gli altri dati nascosti.</li>
+<li><b>Cifratura end-to-end:</b> tutto viene chiuso con una chiave creata sul tuo telefono. La chiave è salvata solo <b>nel tuo Google Drive</b>, in una cartella nascosta che può usare solo l'app, e in un <b>codice di sicurezza</b> che puoi scrivere su carta. Noi non abbiamo la chiave: sui nostri server ci sono solo file illeggibili, anche per noi.</li>
+<li>Cosa vediamo noi (serve a far funzionare il servizio): l'email e il codice del tuo account Google, quando hai fatto l'accesso, se il tuo abbonamento è attivo e fino a quando, quanti file hai nel cloud, quanto pesano e quando è stato fatto l'ultimo backup. Non vediamo nomi, foto, note o terapie.</li>
+<li>Dove: Google Firebase (Google Ireland / Google LLC), i file del backup su server in Belgio (europe-west1); l'accesso con Google (Firebase Authentication) è gestito da Google anche fuori dall'UE. Pagamenti: Google Play; stato dell'abbonamento: RevenueCat (RevenueCat Inc., USA). Per i trasferimenti fuori dall'UE questi fornitori usano le garanzie previste dal GDPR (per esempio le clausole contrattuali tipo).</li>
+<li>Perché (base giuridica): per fornirti il servizio che hai chiesto (contratto, art. 6.1.b GDPR). Il backup è facoltativo: se non lo attivi, l'app funziona uguale e non riceviamo niente.</li>
+<li>Titolare del trattamento: Mirko Del Sette (contatto sotto). Google (Firebase) e RevenueCat trattano i dati per nostro conto come responsabili del trattamento.</li>
+</ul>
+<h3>13. Quanto teniamo i dati del cloud</h3>
+<ul>
+<li>Mentre l'abbonamento è attivo: sempre.</li>
+<li>Se smetti di pagare: li cancelliamo <b>3 mesi</b> dopo la fine dell'abbonamento.</li>
+<li>Se finisce la <b>prova gratuita di 1 mese</b> e non hai mai pagato: li cancelliamo <b>30 giorni</b> dopo la fine della prova.</li>
+<li>Se cancelli l'account (nell'app o dalla pagina <a href="cancella-account.html">cancella-account</a>): li cancelliamo subito; Google, che ospita il servizio, toglie poi anche le sue copie di sicurezza interne entro 180 giorni.</li>
+<li>I dati sul tuo telefono non vengono mai toccati.</li>
+</ul>
+<h3>14. Se perdi l'account Google</h3>
+<p>La chiave è legata al tuo account Google. Se perdi l'accesso al tuo account Google <b>e</b> non hai il codice di sicurezza su carta, nessuno può più aprire il backup: nemmeno noi, perché non abbiamo la chiave. I dati sul telefono restano: puoi entrare con un altro account e fare un nuovo backup.</p>
+<h3>15. Segnalazioni di contenuti illegali</h3>
+<p>Scrivi a <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a>. Non possiamo vedere il contenuto dei backup: possiamo bloccare o cancellare un account cloud segnalato (vedi Termini d'uso).</p>
+<h3>16. Sicurezza</h3>
+<p>Collegamenti solo cifrati (HTTPS), ogni account può leggere solo i propri file, nessuna chiave o password nel codice dell'app. Se succedesse una violazione dei dati, avviseremo il Garante per la protezione dei dati personali entro 72 ore e avviseremo te se c'è un rischio alto per te.</p>
+<h3>17. I tuoi diritti</h3>
+<p>Puoi chiederci di vedere, correggere, cancellare, limitare o avere in copia (portabilità) i dati che abbiamo su di te, o opporti al loro uso, scrivendo a <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a>. Puoi cancellare tutto da solo dall'app (Cancella account). Puoi fare reclamo al Garante (www.garanteprivacy.it). Il contenuto dei backup non possiamo dartelo noi perché non possiamo leggerlo: lo ripristini tu dall'app.</p>
+<h3>18. Permessi (aggiungere alla lista):</h3>
+<ul>
+<li><b>Internet:</b> solo per il backup nel cloud, l'accesso con Google e l'abbonamento. Senza backup l'app non manda niente.</li>
+<li><b>Google Drive (solo cartella nascosta dell'app):</b> per salvare la chiave del tuo backup nel tuo account. L'app non vede gli altri file del tuo Drive.</li>
+</ul>
+<p>Termini d'uso: <a href="termini.html">termini.html</a></p>
 </section>
 
 <section id="en" lang="en">
 <h2>Privacy policy</h2>
-<p class="small">Effective 11 November 2026 · App: TataZampa (Android) · Developer: Mirko Del Sette · Contact: <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a></p>
+<p class="small">Effective 14 November 2026 · App: TataZampa (Android) · Developer: Mirko Del Sette · Contact: <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a></p>
 
-<p class="box">In short: TataZampa does not collect, send or sell any data. Everything stays on your phone. The app does not even have permission to use the internet.</p>
+<p class="box">In short: without cloud backup, TataZampa does not send your data: everything stays on your phone. If you turn on cloud backup (paid, optional), your data is <b>encrypted on your phone before it leaves</b>: neither we nor anyone else can read it.</p>
 
 <h3>1. Who we are</h3>
 <p>TataZampa is a free alarm and reminder app for your pets' medications, meals and other care, developed by Mirko Del Sette (private individual).</p>
@@ -95,7 +128,7 @@
 
 <h3>3. What the app does NOT do</h3>
 <ul>
-  <li>It sends no data to us or anyone else: the app does not have the Android internet permission.</li>
+  <li>Without cloud backup it sends none of your data to us or anyone else. Only technical exception: the QR reader (Google ML Kit, inside the app) may send Google anonymous technical statistics about how it works, without your data.</li>
   <li>No ads, no analytics, no tracking, no profiling.</li>
   <li>It does not use your location, contacts, microphone or advertising ID.</li>
   <li>It does not sell or transfer data to anyone.</li>
@@ -106,7 +139,7 @@
   <li><b>Notifications, exact alarms, full-screen alarm, start at boot, vibration, wake lock</b>: to ring the alarm on time, even when the phone is locked or after a restart.</li>
   <li><b>Display over other apps</b>: only to open the ringing alarm screen by itself, also while you use the phone. No data is read from other apps.</li>
   <li><b>Foreground service for alarms</b>: to keep the alarm sound playing until you press DONE (FATTO) or Snooze.</li>
-  <li><b>Network state</b>: required by the Google component that reads QR codes (only to know whether a network exists). The app does not have the internet permission, so no data can leave the phone.</li>
+  <li><b>Network state</b>: required by the Google component that reads QR codes (only to know whether a network exists).</li>
   <li><b>Ignore battery optimization</b> (you grant it): so the phone does not block medication alarms.</li>
   <li><b>Camera</b>: only when you tap "Scan QR" (Inquadra QR) to read the QR code from another phone. Camera images stay on the phone and are not saved. For the pet photo you choose gallery or camera; the photo stays inside the app.</li>
 </ul>
@@ -118,7 +151,7 @@
 <p>If Google backup is turned on on your phone, Android may save a copy of the app's data in <b>your</b> Google account, to restore it on a new phone. This backup is managed by Google under its own terms; we cannot see or access it. You can turn it off in your phone settings (Google → Backup).</p>
 
 <h3>7. Updates</h3>
-<p>When a new version is available, the app may ask the Google Play app to show you the "Update" window. This happens between your phone and Google Play; TataZampa sends no data.</p>
+<p>When a new version is available, the app may ask the Google Play app to show you the "Update" window. This happens between your phone and Google Play; TataZampa sends no data. Only copies installed from a file (not from the Play Store) ask Google Firebase whether there is an update notice: only a technical installation code is sent, none of your data.</p>
 
 <h3>8. Deleting data</h3>
 <p>You can delete a pet in Settings → Profiles. Uninstalling the app deletes all its data from the phone. The Android backup can be deleted from your Google account.</p>
@@ -131,6 +164,39 @@
 
 <h3>11. Contact</h3>
 <p>Questions: Mirko Del Sette – <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a></p>
+<p>Without cloud backup, TataZampa sends no data at all: everything stays on your phone. If you turn on cloud backup (paid, optional), your data is <b>encrypted on your phone before it leaves</b>: neither we nor anyone else can read it.</p>
+<h3>12. Cloud backup (optional)</h3>
+<ul>
+<li>What it saves: pet profiles, alarms, medicines, food, other tasks, notes, history, profile photos and album photos (within your plan's limit).</li>
+<li>Before upload, photos are made smaller and we remove the location (GPS) and other hidden data.</li>
+<li><b>End-to-end encryption:</b> everything is locked with a key created on your phone. The key is saved only <b>in your Google Drive</b>, in a hidden folder that only the app can use, and in a <b>security code</b> you can write on paper. We do not have the key: our servers only hold files that are unreadable, to us too.</li>
+<li>What we can see (needed to run the service): your Google account email and ID, when you signed in, whether your subscription is active and until when, how many files you have in the cloud, their size and when the last backup was made. We cannot see names, photos, notes or medicines.</li>
+<li>Where: Google Firebase (Google Ireland / Google LLC), backup files on servers in Belgium (europe-west1); Google sign-in (Firebase Authentication) is handled by Google also outside the EU. Payments: Google Play; subscription status: RevenueCat (RevenueCat Inc., USA). For transfers outside the EU these providers use the safeguards required by the GDPR (for example standard contractual clauses).</li>
+<li>Why (legal basis): to provide the service you asked for (contract, Art. 6(1)(b) GDPR). The backup is optional: if you do not turn it on, the app works the same and we receive nothing.</li>
+<li>Data controller: Mirko Del Sette (contact below). Google (Firebase) and RevenueCat process data on our behalf as processors.</li>
+</ul>
+<h3>13. How long we keep cloud data</h3>
+<ul>
+<li>While your subscription is active: always.</li>
+<li>If you stop paying: we delete it <b>3 months</b> after your subscription ends.</li>
+<li>If your <b>1-month free trial</b> ends and you never paid: we delete it <b>30 days</b> after the trial ends.</li>
+<li>If you delete your account (in the app or at <a href="cancella-account.html">delete-account</a>): we delete it right away; Google, which hosts the service, then also removes its internal backup copies within 180 days.</li>
+<li>The data on your phone is never touched.</li>
+</ul>
+<h3>14. If you lose your Google account</h3>
+<p>The key is tied to your Google account. If you lose access to your Google account <b>and</b> you do not have the security code on paper, nobody can open the backup anymore: not even us, because we do not have the key. The data on your phone stays: you can sign in with another account and make a new backup.</p>
+<h3>15. Reporting illegal content</h3>
+<p>Write to <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a>. We cannot see what is inside backups: we can block or delete a reported cloud account (see Terms of use).</p>
+<h3>16. Security</h3>
+<p>Encrypted connections only (HTTPS), each account can read only its own files, no keys or passwords in the app code. If a data breach ever happened, we would notify the Italian Data Protection Authority (Garante) within 72 hours and tell you if there is a high risk for you.</p>
+<h3>17. Your rights</h3>
+<p>You can ask us to see, correct, delete, restrict or get a copy (portability) of the data we hold about you, or object to its use, by writing to <a href="mailto:mirkodelsette@yahoo.it">mirkodelsette@yahoo.it</a>. You can delete everything yourself in the app (Delete account). You can complain to the Garante (www.garanteprivacy.it). We cannot give you the contents of your backups because we cannot read them: you restore them yourself in the app.</p>
+<h3>18. Permissions (add to the list):</h3>
+<ul>
+<li><b>Internet:</b> only for cloud backup, Google sign-in and the subscription. Without backup the app sends nothing.</li>
+<li><b>Google Drive (only the app's hidden folder):</b> to save your backup key in your own account. The app cannot see the other files in your Drive.</li>
+</ul>
+<p>Terms of use: <a href="termini.html">termini.html</a></p>
 </section>
 </main>
 </body>
